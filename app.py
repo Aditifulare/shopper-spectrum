@@ -11,34 +11,34 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# ---------------------- Custom CSS (Dark Navy/Teal Theme) ----------------------
+# ---------------------- Custom CSS (Warm Brown/Coffee + Gold Theme) ----------------------
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap');
 
     .stApp {
-        background-color: #0a1628;
-        color: #e2e8f0;
+        background-color: #1f1410;
+        color: #ede4d3;
     }
 
     section[data-testid="stSidebar"] {
-        background-color: #0d1f35;
-        border-right: 1px solid #1e3a5f;
+        background-color: #241a14;
+        border-right: 1px solid #4a3526;
     }
 
     section[data-testid="stSidebar"] .stRadio label {
         font-family: 'Inter', sans-serif;
-        color: #e2e8f0;
+        color: #ede4d3;
         font-size: 16px;
     }
 
     h1, h2, h3 {
         font-family: 'Playfair Display', serif;
-        color: #ffffff !important;
+        color: #f5ecd9 !important;
     }
 
     h1 {
-        background: linear-gradient(90deg, #06b6d4, #3b82f6);
+        background: linear-gradient(90deg, #d4a843, #b8762e);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
@@ -49,8 +49,8 @@ st.markdown("""
     }
 
     div.stButton > button {
-        background: linear-gradient(90deg, #06b6d4, #0891b2);
-        color: white;
+        background: linear-gradient(90deg, #c9962f, #a8762a);
+        color: #1f1410;
         border: none;
         border-radius: 8px;
         padding: 0.6rem 1.5rem;
@@ -60,44 +60,45 @@ st.markdown("""
     }
 
     div.stButton > button:hover {
-        background: linear-gradient(90deg, #0891b2, #0e7490);
-        box-shadow: 0 4px 14px rgba(6, 182, 212, 0.4);
+        background: linear-gradient(90deg, #d4a843, #b8762e);
+        box-shadow: 0 4px 14px rgba(201, 150, 47, 0.4);
         transform: translateY(-1px);
     }
 
     .stTextInput input, .stNumberInput input {
-        background-color: #112847;
-        color: #e2e8f0;
-        border: 1px solid #1e3a5f;
+        background-color: #2e2018;
+        color: #ede4d3;
+        border: 1px solid #4a3526;
         border-radius: 6px;
     }
 
     .segment-card {
-        background: linear-gradient(135deg, #112847, #0d1f35);
-        border: 1px solid #1e3a5f;
-        border-left: 4px solid #06b6d4;
+        background: linear-gradient(135deg, #2e2018, #241a14);
+        border: 1px solid #4a3526;
+        border-left: 4px solid #c9962f;
         border-radius: 10px;
         padding: 1.5rem;
         margin-top: 1rem;
     }
 
     .product-card {
-        background: linear-gradient(135deg, #112847, #0d1f35);
-        border: 1px solid #1e3a5f;
+        background: linear-gradient(135deg, #2e2018, #241a14);
+        border: 1px solid #4a3526;
         border-radius: 8px;
         padding: 0.9rem 1.2rem;
         margin: 0.5rem 0;
         font-family: 'Inter', sans-serif;
-        color: #e2e8f0;
-        border-left: 3px solid #06b6d4;
+
+        color: #ede4d3;
+        border-left: 3px solid #c9962f;
     }
 
     .metric-box {
-        background-color: #112847;
+        background-color: #2e2018;
         border-radius: 10px;
         padding: 1rem;
         text-align: center;
-        border: 1px solid #1e3a5f;
+        border: 1px solid #4a3526;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -260,7 +261,7 @@ elif page == "📊 Clustering":
         else:
             st.markdown("""
             <div class="segment-card">
-            <p style="color:#94a3b8;">Enter values and click <b>Predict Segment</b> to see the result.</p>
+            <p style="color:#a08868;">Enter values and click <b>Predict Segment</b> to see the result.</p>
             </div>
             """, unsafe_allow_html=True)
 
@@ -306,6 +307,6 @@ elif page == "🔁 Recommendation":
                 st.markdown(f"""
                 <div class="product-card">
                 <b>{i}. {prod}</b>
-                <span style="color:#06b6d4; float:right;">{score:.2f} similarity</span>
+                <span style="color:#c9962f; float:right;">{score:.2f} similarity</span>
                 </div>
                 """, unsafe_allow_html=True)
