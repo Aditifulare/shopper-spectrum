@@ -1,23 +1,15 @@
 # 🛒 Shopper Spectrum: Customer Segmentation and Product Recommendations in E-Commerce
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://shopper-spectrum-izebcful5ygeybxjxrvdxr.streamlit.app/)
+
 An end-to-end data science project on e-commerce transaction data that:
 1. Segments customers using **RFM analysis** and **KMeans clustering**
 2. Recommends similar products using **item-based collaborative filtering** (cosine similarity)
 3. Deploys both as an interactive **Streamlit** web app
 
-## 📂 Project Structure
+![App Screenshot](screenshots/home.png)
 
-```
-shopper_spectrum/
-├── shopper_spectrum.ipynb     # Full analysis notebook (cleaning, EDA, clustering, recommendation)
-├── app.py                     # Streamlit web app
-├── requirements.txt           # Python dependencies
-├── online_retail.csv          # Dataset (UK online retail transactions, Dec 2022 - Dec 2023)
-├── kmeans_model.pkl           # Trained KMeans clustering model
-├── rfm_scaler.pkl             # StandardScaler fitted on log-transformed RFM values
-├── cluster_label_map.pkl      # Maps cluster number -> segment label
-└── product_similarity.pkl     # Product-product cosine similarity matrix
-```
+## 📂 Project Structure
 
 ## 🧠 Approach
 
